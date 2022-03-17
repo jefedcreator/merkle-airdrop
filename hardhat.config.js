@@ -33,33 +33,33 @@ module.exports = {
       timeout: 1600000,
     },
 
-    matic: {
-      url: process.env.MATIC_URL,
-      // url: 'https://rpc-mainnet.maticvigil.com/',
-      accounts: [process.env.SECRET],
-      //   // blockGasLimit: 20000000,
-      //   blockGasLimit: 20000000,
-      gasPrice: 1000000000,
-      // timeout: 90000
-    },
+    // matic: {
+    //   url: process.env.MATIC_URL,
+    //   // url: 'https://rpc-mainnet.maticvigil.com/',
+    //   accounts: [process.env.SECRET],
+    //   //   // blockGasLimit: 20000000,
+    //   //   blockGasLimit: 20000000,
+    //   gasPrice: 1000000000,
+    //   // timeout: 90000
+    // },
     // mumbai: {
     //   url: 'https://rpc-mumbai.matic.today',
     //   accounts: [process.env.SECRET],
     //   blockGasLimit: 20000000,
     //   gasPrice: 1000000000
     // },
-    // gorli: {
-    //   url: process.env.GORLI,
-    //   accounts: [process.env.SECRET],
-    //   blockGasLimit: 20000000,
-    //   gasPrice: 2100000000
-    // },
-    kovan: {
-      url: process.env.KOVAN_URL,
+    ropsten: {
+      url: process.env.ROPSTEN_URL,
       accounts: [process.env.SECRET],
-      gasPrice: 5000000000,
-      timeout: 200000000,
+      blockGasLimit: 20000000,
+      gasPrice: 2100000000
     },
+    // kovan: {
+    //   url: process.env.KOVAN_URL,
+    //   accounts: [process.env.SECRET],
+    //   gasPrice: 5000000000,
+    //   timeout: 200000000,
+    // },
     // ethereum: {
     //   url: process.env.MAINNET_URL,
     //   accounts: [process.env.SECRET],
