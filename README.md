@@ -1,5 +1,7 @@
 # merkle-airdrop
 
+View verified Contract on Ropsten : https://ropsten.etherscan.io/address/0xCdC7D3b9C187871E28DfbaBD1C07b42FC976e6e8#code
+
 Generates a list of abjects mapped to each address and root hash. Object contains the leaves and merkle proofs needed to verify that a given data exists for that address in the tree
 
 ## Overview
