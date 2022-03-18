@@ -3,6 +3,7 @@
 //
 // When running the script with `npx hardhat run <script>` you'll find the Hardhat
 // Runtime Environment's members available in the global scope.
+const { ethers } = require("hardhat");
 const hre = require("hardhat");
 
 async function main() {
@@ -14,11 +15,15 @@ async function main() {
   // await hre.run('compile');
 
   // We get the contract to deploy
+//   const [owner] = await ethers.getSigners();
   const AirDropToken = await hre.ethers.getContractFactory("AirdropToken");
   const deployAirDropToken = await AirDropToken.deploy();
 
   await deployAirDropToken.deployed();
   console.log("Token deployed to:", deployAirDropToken.address);
+
+  await deployAirDropToken.giveReward()
+
 }
 
 // We recommend this pattern to be able to use async/await everywhere

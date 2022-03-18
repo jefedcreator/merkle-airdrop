@@ -24,7 +24,7 @@ function main() {
   );
 
   //contract of items being sent out
-  const airdropContract = "0x828c0824b87DBffb3849019334F9164498C99bA3";
+  const airdropContract = "0xDAFDB4CB21822800A1e61D8A0F03271C29feA6b8";
 
   // used to store one leaf for each line in the distribution file
   const token_dist = [];

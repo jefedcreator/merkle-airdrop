@@ -51,9 +51,9 @@ module.exports = {
     ropsten: {
       url: process.env.ROPSTEN_URL,
       accounts: [process.env.SECRET],
-      blockGasLimit: 20000000,
-      gasPrice: 2100000000
-    },
+      gas: 2100000,
+      gasPrice: 8000000000,
+  },
     // kovan: {
     //   url: process.env.KOVAN_URL,
     //   accounts: [process.env.SECRET],
@@ -76,6 +76,11 @@ module.exports = {
     alphaSort: false,
     runOnCompile: false,
     disambiguatePaths: true,
+  },
+  etherscan: {
+    apiKey: {
+      ropsten: process.env.ETHERSCAN_KEY,
+    }
   },
   // This is a sample solc configuration that specifies which version of solc to use
   solidity: {
